@@ -36,7 +36,7 @@ metrics.
 
    - First clone the repository from Github and switch to the new directory:
      ```bash
-     $ git clone git@github.com/USERNAME/{{ project_name }}.git
+     $ git clone https://github.com/shashank-1995/Vendor-Management-System.git
      $ cd vendor_management_system
      ```
    - Install project dependencies:
