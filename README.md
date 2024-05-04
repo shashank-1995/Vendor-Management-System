@@ -132,7 +132,7 @@ metrics.
                "average_response_time": 2.5,
                "fulfillment_rate": 0.98
            },  
-           ...
+           
        ]
    }
    ```
@@ -393,7 +393,6 @@ metrics.
                 "acknowledgment_date": null,
                 "vendor": 578
             },
-            // More results...
         ]
     }
     ```
@@ -540,6 +539,7 @@ metrics.
         "issue_date": "2024-05-04T10:00:00Z",
         "acknowledgment_date": "2024-05-11T10:00:00Z"
     }
+    ```
     ### Response:
     - Status: OK (200)
     ```json
