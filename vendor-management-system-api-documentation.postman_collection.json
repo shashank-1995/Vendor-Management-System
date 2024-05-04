@@ -1,0 +1,1822 @@
+{
+	"info": {
+		"_postman_id": "625a11f5-cc07-4f9b-9d5d-42ef15838bda",
+		"name": "Vendor Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-API-TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"dev\",\n    \"password\": \"dev\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET-API-TOKEN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"dev\",\n    \"password\": \"dev\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 06:18:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNDg4OTkwMiwiaWF0IjoxNzE0ODAzNTAyLCJqdGkiOiI1NGU0ZmQxZTNmNjM0NTFkODQ3YzM5ZDBmYTViNzA1NCIsInVzZXJfaWQiOjJ9.K-GW4v27Waf7A0S8sZr711pxPOevoL6nN1tXKn0K5sQ\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODAzODAyLCJpYXQiOjE3MTQ4MDM1MDIsImp0aSI6ImNmMmNjMTljZDBmNTQ5MmM5ZjUyOGIwYTEwZThlZjZjIiwidXNlcl9pZCI6Mn0.z4wL-pCr59otEU-0Bms9GrqQPdo1rcs7NKQXqblDk3Q\"\n}"
+				}
+			]
+		},
+		{
+			"name": "REFRESH-ACCESS-TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNDg4OTkwMiwiaWF0IjoxNzE0ODAzNTAyLCJqdGkiOiI1NGU0ZmQxZTNmNjM0NTFkODQ3YzM5ZDBmYTViNzA1NCIsInVzZXJfaWQiOjJ9.K-GW4v27Waf7A0S8sZr711pxPOevoL6nN1tXKn0K5sQ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "REFRESH-ACCESS-TOKEN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNDg4OTkwMiwiaWF0IjoxNzE0ODAzNTAyLCJqdGkiOiI1NGU0ZmQxZTNmNjM0NTFkODQ3YzM5ZDBmYTViNzA1NCIsInVzZXJfaWQiOjJ9.K-GW4v27Waf7A0S8sZr711pxPOevoL6nN1tXKn0K5sQ\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/token/refresh/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 06:24:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA0Nzg2LCJpYXQiOjE3MTQ4MDM1MDIsImp0aSI6IjM2MzIwMGU1MDg0ZDRiODRiY2Q4OTIyNTliMDBiMDZkIiwidXNlcl9pZCI6Mn0.YmYAynf9ajv1qD73hmw3c3PxRDkrpkfi_aA9wy9K8Xg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "LIST-VENDORS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA2NzUzLCJpYXQiOjE3MTQ4MDU4NTMsImp0aSI6IjMwYzdkNWExMjBjMjRlZmQ4OGRkYzZkMjc1ZTIwYjg5IiwidXNlcl9pZCI6Mn0.Qdd0MvV4b1M1M1OmRb7UqdB0PWWfdQevKLWUA0FgACI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/?page=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LIST-VENDORS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/?page=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 06:57:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4183"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 900,\n    \"next\": \"http://127.0.0.1:8000/api/vendors/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"created\": \"2024-05-04T06:30:48.533271Z\",\n            \"updated\": \"2024-05-04T06:30:48.533363Z\",\n            \"name\": \"Example Vendor\",\n            \"contact_details\": \"contact@example.com\",\n            \"address\": \"123 Example St, City, Country\",\n            \"vendor_code\": \"VENDOR123\",\n            \"on_time_delivery_rate\": 0.95,\n            \"quality_rating_avg\": 4.5,\n            \"average_response_time\": 2.5,\n            \"fulfillment_rate\": 0.98\n        },\n        {\n            \"id\": 2,\n            \"created\": \"2024-05-04T06:41:19.481729Z\",\n            \"updated\": \"2024-05-04T06:41:19.481748Z\",\n            \"name\": \"JiKhMCdpTkdFzHCyoQyB\",\n            \"contact_details\": \"jdgCLeNMNaTQGPcQOjoD@example.com\",\n            \"address\": \"XtGNPxkKuhsksTjRGJmaCHyiGiFvyP, City, Country\",\n            \"vendor_code\": \"VENDOR781\",\n            \"on_time_delivery_rate\": 0.9460870009353042,\n            \"quality_rating_avg\": 4.742748719652727,\n            \"average_response_time\": 3.9415807882878133,\n            \"fulfillment_rate\": 0.892637810841542\n        },\n        {\n            \"id\": 3,\n            \"created\": \"2024-05-04T06:41:19.484245Z\",\n            \"updated\": \"2024-05-04T06:41:19.484255Z\",\n            \"name\": \"WMDvcKifznlMmdyyhAIS\",\n            \"contact_details\": \"xdvwExHTiaDvqRiUikxJ@example.com\",\n            \"address\": \"NOjtzRihKTrSmIiWJlkhaEyvthzkXe, City, Country\",\n            \"vendor_code\": \"VENDOR313\",\n            \"on_time_delivery_rate\": 0.872009766447413,\n            \"quality_rating_avg\": 4.515764616279839,\n            \"average_response_time\": 5.4033810172887025,\n            \"fulfillment_rate\": 0.8523481216874739\n        },\n        {\n            \"id\": 4,\n            \"created\": \"2024-05-04T06:41:19.485746Z\",\n            \"updated\": \"2024-05-04T06:41:19.485753Z\",\n            \"name\": \"lQczNzrUBgechDxKTsIY\",\n            \"contact_details\": \"pPkcOFElJilTiZWqPoDV@example.com\",\n            \"address\": \"bFckomzTGCngiHeWtUppvkzkMXFDKw, City, Country\",\n            \"vendor_code\": \"VENDOR957\",\n            \"on_time_delivery_rate\": 0.9312222901456928,\n            \"quality_rating_avg\": 4.767802437559142,\n            \"average_response_time\": 7.587610290192735,\n            \"fulfillment_rate\": 0.9367444749628775\n        },\n        {\n            \"id\": 5,\n            \"created\": \"2024-05-04T06:41:19.486660Z\",\n            \"updated\": \"2024-05-04T06:41:19.486670Z\",\n            \"name\": \"lEtgrjLVOsQlhEvGsdMy\",\n            \"contact_details\": \"ROAeZgtksCLwlQRxbequ@example.com\",\n            \"address\": \"ZKkQvqzWkBgDlAlLEKgCnudFpOmqVs, City, Country\",\n            \"vendor_code\": \"VENDOR985\",\n            \"on_time_delivery_rate\": 0.9424970409223083,\n            \"quality_rating_avg\": 3.3031031038494936,\n            \"average_response_time\": 5.186515560469715,\n            \"fulfillment_rate\": 0.9494720513407214\n        },\n        {\n            \"id\": 6,\n            \"created\": \"2024-05-04T06:41:19.487455Z\",\n            \"updated\": \"2024-05-04T06:41:19.487463Z\",\n            \"name\": \"NaTbGkhKHcfoKaoOSmMS\",\n            \"contact_details\": \"vIgQAMcNohjPprODisqd@example.com\",\n            \"address\": \"GNRGDUEfUYyIFbrrSsROcBlZGaDFvN, City, Country\",\n            \"vendor_code\": \"VENDOR209\",\n            \"on_time_delivery_rate\": 0.8715811671231821,\n            \"quality_rating_avg\": 3.548162491955206,\n            \"average_response_time\": 8.718883656625195,\n            \"fulfillment_rate\": 0.8676075212502564\n        },\n        {\n            \"id\": 7,\n            \"created\": \"2024-05-04T06:41:19.488048Z\",\n            \"updated\": \"2024-05-04T06:41:19.488056Z\",\n            \"name\": \"fnkVwAwLrpyqyRkZtZJe\",\n            \"contact_details\": \"xFuvsWLTBtJKGzCNckIn@example.com\",\n            \"address\": \"xCjNTORhELhEMtqllRANWcGvXHVECr, City, Country\",\n            \"vendor_code\": \"VENDOR597\",\n            \"on_time_delivery_rate\": 0.8347126413913476,\n            \"quality_rating_avg\": 4.954902449265749,\n            \"average_response_time\": 9.769775954069877,\n            \"fulfillment_rate\": 0.9427863353061616\n        },\n        {\n            \"id\": 8,\n            \"created\": \"2024-05-04T06:41:19.488730Z\",\n            \"updated\": \"2024-05-04T06:41:19.488737Z\",\n            \"name\": \"zpZcgnrSdEuEDeeLAOyB\",\n            \"contact_details\": \"yjCMrunDniDUtPkzMfhz@example.com\",\n            \"address\": \"wUQJzYRhlHZZOHyxOiYvYWLHnXtGwN, City, Country\",\n            \"vendor_code\": \"VENDOR524\",\n            \"on_time_delivery_rate\": 0.870641465350904,\n            \"quality_rating_avg\": 3.6138107468496354,\n            \"average_response_time\": 6.32875297046008,\n            \"fulfillment_rate\": 0.9078582111571945\n        },\n        {\n            \"id\": 9,\n            \"created\": \"2024-05-04T06:41:19.489365Z\",\n            \"updated\": \"2024-05-04T06:41:19.489372Z\",\n            \"name\": \"zKIKBfTORyCWNxPapzlw\",\n            \"contact_details\": \"QkbwzaflEnGsShGqaBJL@example.com\",\n            \"address\": \"SXTwhcmHcnFqtOqyIWbbagjDgiTFZD, City, Country\",\n            \"vendor_code\": \"VENDOR264\",\n            \"on_time_delivery_rate\": 0.9014642953375174,\n            \"quality_rating_avg\": 3.3568644760163626,\n            \"average_response_time\": 6.240577604085604,\n            \"fulfillment_rate\": 0.8243943332137091\n        },\n        {\n            \"id\": 10,\n            \"created\": \"2024-05-04T06:41:19.490047Z\",\n            \"updated\": \"2024-05-04T06:41:19.490053Z\",\n            \"name\": \"SNccNpGuExCCdycbRkgF\",\n            \"contact_details\": \"JtLpyXTjlPUNHRyRYcVu@example.com\",\n            \"address\": \"QqNuIGjXtqkNRYgLWNpKDXXrSvfrgc, City, Country\",\n            \"vendor_code\": \"VENDOR752\",\n            \"on_time_delivery_rate\": 0.8820169429019925,\n            \"quality_rating_avg\": 4.751234131031381,\n            \"average_response_time\": 2.060527682237158,\n            \"fulfillment_rate\": 0.9957698817835712\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE-VENDOR",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA0OTI0LCJpYXQiOjE3MTQ4MDQwMjQsImp0aSI6IjRmMTVlYmUzMDUxNDQwZjE4M2NjMjFhYWI4Y2E1YzY4IiwidXNlcl9pZCI6Mn0.41HRSVjnhewD42yap1FZtBsn_bDLTpgi4E7J6IMp-YA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Example Vendor\",\n    \"contact_details\": \"contact@example.com\",\n    \"address\": \"123 Example St, City, Country\",\n    \"vendor_code\": \"VENDOR123\",\n    \"on_time_delivery_rate\": 0.95,\n    \"quality_rating_avg\": 4.5,\n    \"average_response_time\": 2.5,\n    \"fulfillment_rate\": 0.98\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE-VENDOR",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Example Vendor\",\n    \"contact_details\": \"contact@example.com\",\n    \"address\": \"123 Example St, City, Country\",\n    \"vendor_code\": \"VENDOR123\",\n    \"on_time_delivery_rate\": 0.95,\n    \"quality_rating_avg\": 4.5,\n    \"average_response_time\": 2.5,\n    \"fulfillment_rate\": 0.98\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 06:30:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "326"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"created\": \"2024-05-04T06:30:48.533271Z\",\n    \"updated\": \"2024-05-04T06:30:48.533363Z\",\n    \"name\": \"Example Vendor\",\n    \"contact_details\": \"contact@example.com\",\n    \"address\": \"123 Example St, City, Country\",\n    \"vendor_code\": \"VENDOR123\",\n    \"on_time_delivery_rate\": 0.95,\n    \"quality_rating_avg\": 4.5,\n    \"average_response_time\": 2.5,\n    \"fulfillment_rate\": 0.98\n}"
+				}
+			]
+		},
+		{
+			"name": "RETRIEVE-VENDOR",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA2NzUzLCJpYXQiOjE3MTQ4MDU4NTMsImp0aSI6IjMwYzdkNWExMjBjMjRlZmQ4OGRkYzZkMjc1ZTIwYjg5IiwidXNlcl9pZCI6Mn0.Qdd0MvV4b1M1M1OmRb7UqdB0PWWfdQevKLWUA0FgACI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "RETRIEVE-VENDOR",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:00:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "418"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"created\": \"2024-05-04T06:41:19.490047Z\",\n    \"updated\": \"2024-05-04T06:41:19.490053Z\",\n    \"name\": \"SNccNpGuExCCdycbRkgF\",\n    \"contact_details\": \"JtLpyXTjlPUNHRyRYcVu@example.com\",\n    \"address\": \"QqNuIGjXtqkNRYgLWNpKDXXrSvfrgc, City, Country\",\n    \"vendor_code\": \"VENDOR752\",\n    \"on_time_delivery_rate\": 0.8820169429019925,\n    \"quality_rating_avg\": 4.751234131031381,\n    \"average_response_time\": 2.060527682237158,\n    \"fulfillment_rate\": 0.9957698817835712\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE-VENDOR",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA2NzUzLCJpYXQiOjE3MTQ4MDU4NTMsImp0aSI6IjMwYzdkNWExMjBjMjRlZmQ4OGRkYzZkMjc1ZTIwYjg5IiwidXNlcl9pZCI6Mn0.Qdd0MvV4b1M1M1OmRb7UqdB0PWWfdQevKLWUA0FgACI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Updated Vendor Name\",\n    \"contact_details\": \"Updated Contact Details\",\n    \"address\": \"Updated Address\",\n    \"on_time_delivery_rate\": 0.95,\n    \"quality_rating_avg\": 4.5,\n    \"average_response_time\": 5.2,\n    \"fulfillment_rate\": 0.92,\n    \"vendor_code\": \"VENDR634\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/10/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"10",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE-VENDOR",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Vendor Name\",\n    \"contact_details\": \"Updated Contact Details\",\n    \"address\": \"Updated Address\",\n    \"on_time_delivery_rate\": 0.95,\n    \"quality_rating_avg\": 4.5,\n    \"average_response_time\": 5.2,\n    \"fulfillment_rate\": 0.92,\n    \"vendor_code\": \"VENDR634\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/10/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								"10",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:06:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "321"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"created\": \"2024-05-04T06:41:19.490047Z\",\n    \"updated\": \"2024-05-04T07:06:25.641977Z\",\n    \"name\": \"Updated Vendor Name\",\n    \"contact_details\": \"Updated Contact Details\",\n    \"address\": \"Updated Address\",\n    \"vendor_code\": \"VENDR634\",\n    \"on_time_delivery_rate\": 0.95,\n    \"quality_rating_avg\": 4.5,\n    \"average_response_time\": 5.2,\n    \"fulfillment_rate\": 0.92\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE-VENDOR",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA4NDMyLCJpYXQiOjE3MTQ4MDc1MzIsImp0aSI6ImQzNjJmMmVjZjZiYjRmODVhZGQ1ZGM1ZjZiZjZjMjhkIiwidXNlcl9pZCI6Mn0.5Ri6Q8eK0_85IzZRskgYnFv3Sj2Pv2f-reP6IE2mxwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/11/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"11",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE-VENDOR",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/11/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								"11",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:26:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "CREATE-PURCHASE-ORDERS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA4NDMyLCJpYXQiOjE3MTQ4MDc1MzIsImp0aSI6ImQzNjJmMmVjZjZiYjRmODVhZGQ1ZGM1ZjZiZjZjMjhkIiwidXNlcl9pZCI6Mn0.5Ri6Q8eK0_85IzZRskgYnFv3Sj2Pv2f-reP6IE2mxwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <your_access_token>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"po_number\": \"PO-12345\",\n    \"vendor\": 1,\n    \"order_date\": \"2024-05-05T10:00:00Z\",\n    \"delivery_date\": \"2024-05-10T10:00:00Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 1\",\n            \"price\": 10\n        },\n        {\n            \"name\": \"Item 2\",\n            \"price\": 20\n        }\n    ],\n    \"quantity\": 50,\n    \"status\": \"Pending\",\n    \"issue_date\": \"2024-05-04T10:00:00Z\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/purchase_orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE-PURCHASE-ORDERS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <your_access_token>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"po_number\": \"PO-12345\",\n    \"vendor\": 1,\n    \"order_date\": \"2024-05-05T10:00:00Z\",\n    \"delivery_date\": \"2024-05-10T10:00:00Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 1\",\n            \"price\": 10\n        },\n        {\n            \"name\": \"Item 2\",\n            \"price\": 20\n        }\n    ],\n    \"quantity\": 50,\n    \"status\": \"Pending\",\n    \"issue_date\": \"2024-05-04T10:00:00Z\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/purchase_orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:25:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "386"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1352,\n    \"created\": \"2024-05-04T07:25:50.179827Z\",\n    \"updated\": \"2024-05-04T07:25:50.179865Z\",\n    \"po_number\": \"PO-12345\",\n    \"order_date\": \"2024-05-05T10:00:00Z\",\n    \"delivery_date\": \"2024-05-10T10:00:00Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 1\",\n            \"price\": 10\n        },\n        {\n            \"name\": \"Item 2\",\n            \"price\": 20\n        }\n    ],\n    \"quantity\": 50,\n    \"status\": \"Pending\",\n    \"quality_rating\": null,\n    \"issue_date\": \"2024-05-04T10:00:00Z\",\n    \"acknowledgment_date\": null,\n    \"vendor\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "LIST-PURCHASE-ORDERS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA4NjA3LCJpYXQiOjE3MTQ4MDc3MDcsImp0aSI6ImMxNGRlOTE2M2Y0MDQ0Mzc5YjhjNGNkNDQxYjdhMTE3IiwidXNlcl9pZCI6Mn0.11OSlhrC_7XRwTpOjWNip3hx5d9oP2AUkM1lM4lXFvk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <your_access_token>"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/purchase_orders/?page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LIST-PURCHASE-ORDERS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <your_access_token>"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/purchase_orders/list/?page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:29:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4554"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 999,\n    \"next\": \"http://localhost:8000/api/purchase_orders/list/?page=3\",\n    \"previous\": \"http://localhost:8000/api/purchase_orders/list/\",\n    \"results\": [\n        {\n            \"id\": 362,\n            \"created\": \"2024-05-04T07:21:46.963854Z\",\n            \"updated\": \"2024-05-04T07:21:46.963860Z\",\n            \"po_number\": \"PO-5639\",\n            \"order_date\": \"2023-10-16T07:21:46.963795Z\",\n            \"delivery_date\": \"2023-11-02T07:21:46.963795Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 36\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 13\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 55\n                },\n                {\n                    \"name\": \"Item 3\",\n                    \"price\": 44\n                },\n                {\n                    \"name\": \"Item 4\",\n                    \"price\": 27\n                }\n            ],\n            \"quantity\": 32,\n            \"status\": \"In Progress\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2023-10-13T07:21:46.963795Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 578\n        },\n        {\n            \"id\": 363,\n            \"created\": \"2024-05-04T07:21:46.964448Z\",\n            \"updated\": \"2024-05-04T07:21:46.964454Z\",\n            \"po_number\": \"PO-8053\",\n            \"order_date\": \"2023-08-12T07:21:46.964387Z\",\n            \"delivery_date\": \"2023-08-15T07:21:46.964387Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 81\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 85\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 74\n                },\n                {\n                    \"name\": \"Item 3\",\n                    \"price\": 40\n                }\n            ],\n            \"quantity\": 26,\n            \"status\": \"In Progress\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2023-08-11T07:21:46.964387Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 467\n        },\n        {\n            \"id\": 364,\n            \"created\": \"2024-05-04T07:21:46.965261Z\",\n            \"updated\": \"2024-05-04T07:21:46.965268Z\",\n            \"po_number\": \"PO-7376\",\n            \"order_date\": \"2023-10-05T07:21:46.965203Z\",\n            \"delivery_date\": \"2023-10-26T07:21:46.965203Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 82\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 19\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 49\n                }\n            ],\n            \"quantity\": 8,\n            \"status\": \"Pending\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2023-09-29T07:21:46.965203Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 368\n        },\n        {\n            \"id\": 365,\n            \"created\": \"2024-05-04T07:21:46.966382Z\",\n            \"updated\": \"2024-05-04T07:21:46.966388Z\",\n            \"po_number\": \"PO-7749\",\n            \"order_date\": \"2024-02-18T07:21:46.966326Z\",\n            \"delivery_date\": \"2024-03-07T07:21:46.966326Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 7\n                }\n            ],\n            \"quantity\": 33,\n            \"status\": \"Pending\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2024-02-16T07:21:46.966326Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 838\n        },\n        {\n            \"id\": 366,\n            \"created\": \"2024-05-04T07:21:46.969662Z\",\n            \"updated\": \"2024-05-04T07:21:46.969670Z\",\n            \"po_number\": \"PO-9583\",\n            \"order_date\": \"2024-04-14T07:21:46.969584Z\",\n            \"delivery_date\": \"2024-04-28T07:21:46.969584Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 2\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 13\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 76\n                }\n            ],\n            \"quantity\": 68,\n            \"status\": \"Completed\",\n            \"quality_rating\": 4.179790419282391,\n            \"issue_date\": \"2024-04-07T07:21:46.969584Z\",\n            \"acknowledgment_date\": \"2024-04-28T07:21:46.969584Z\",\n            \"vendor\": 479\n        },\n        {\n            \"id\": 367,\n            \"created\": \"2024-05-04T07:21:46.970443Z\",\n            \"updated\": \"2024-05-04T07:21:46.970450Z\",\n            \"po_number\": \"PO-7368\",\n            \"order_date\": \"2023-07-04T07:21:46.970384Z\",\n            \"delivery_date\": \"2023-07-23T07:21:46.970384Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 3\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 23\n                }\n            ],\n            \"quantity\": 80,\n            \"status\": \"Completed\",\n            \"quality_rating\": 2.325527326670778,\n            \"issue_date\": \"2023-07-02T07:21:46.970384Z\",\n            \"acknowledgment_date\": \"2023-07-23T07:21:46.970384Z\",\n            \"vendor\": 818\n        },\n        {\n            \"id\": 368,\n            \"created\": \"2024-05-04T07:21:46.971129Z\",\n            \"updated\": \"2024-05-04T07:21:46.971136Z\",\n            \"po_number\": \"PO-1545\",\n            \"order_date\": \"2023-11-06T07:21:46.971071Z\",\n            \"delivery_date\": \"2023-11-11T07:21:46.971071Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 94\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 51\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 5\n                },\n                {\n                    \"name\": \"Item 3\",\n                    \"price\": 83\n                }\n            ],\n            \"quantity\": 2,\n            \"status\": \"Completed\",\n            \"quality_rating\": 1.747242304440281,\n            \"issue_date\": \"2023-11-03T07:21:46.971071Z\",\n            \"acknowledgment_date\": \"2023-11-11T07:21:46.971071Z\",\n            \"vendor\": 134\n        },\n        {\n            \"id\": 369,\n            \"created\": \"2024-05-04T07:21:46.971766Z\",\n            \"updated\": \"2024-05-04T07:21:46.971773Z\",\n            \"po_number\": \"PO-4730\",\n            \"order_date\": \"2023-06-24T07:21:46.971709Z\",\n            \"delivery_date\": \"2023-07-02T07:21:46.971709Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 29\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 6\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 65\n                }\n            ],\n            \"quantity\": 63,\n            \"status\": \"Pending\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2023-06-15T07:21:46.971709Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 805\n        },\n        {\n            \"id\": 370,\n            \"created\": \"2024-05-04T07:21:46.972545Z\",\n            \"updated\": \"2024-05-04T07:21:46.972556Z\",\n            \"po_number\": \"PO-4115\",\n            \"order_date\": \"2023-09-04T07:21:46.972465Z\",\n            \"delivery_date\": \"2023-10-03T07:21:46.972465Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 24\n                }\n            ],\n            \"quantity\": 52,\n            \"status\": \"Pending\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2023-09-01T07:21:46.972465Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 276\n        },\n        {\n            \"id\": 371,\n            \"created\": \"2024-05-04T07:21:46.973366Z\",\n            \"updated\": \"2024-05-04T07:21:46.973373Z\",\n            \"po_number\": \"PO-1528\",\n            \"order_date\": \"2023-12-27T07:21:46.973306Z\",\n            \"delivery_date\": \"2024-01-07T07:21:46.973306Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 58\n                }\n            ],\n            \"quantity\": 70,\n            \"status\": \"Pending\",\n            \"quality_rating\": null,\n            \"issue_date\": \"2023-12-26T07:21:46.973306Z\",\n            \"acknowledgment_date\": null,\n            \"vendor\": 695\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "PURCHASE-ORDERS-BY-VENDOR",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODA4OTAxLCJpYXQiOjE3MTQ4MDgwMDEsImp0aSI6IjdkYzUwNzFmZmVhNTRjZWFhMTk0ZDdiZjVkN2VlNzJkIiwidXNlcl9pZCI6Mn0.LMajmj7cDjxY5TFDxutkibG7akMTrqxwy_xDFmxmCJs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/purchase_orders/?vendor=818",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						""
+					],
+					"query": [
+						{
+							"key": "vendor",
+							"value": "818"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PURCHASE-ORDERS-BY-VENDOR",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/purchase_orders/?vendor=818",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								""
+							],
+							"query": [
+								{
+									"key": "vendor",
+									"value": "818"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:42:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1005"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 2,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 367,\n            \"created\": \"2024-05-04T07:21:46.970443Z\",\n            \"updated\": \"2024-05-04T07:21:46.970450Z\",\n            \"po_number\": \"PO-7368\",\n            \"order_date\": \"2023-07-04T07:21:46.970384Z\",\n            \"delivery_date\": \"2023-07-23T07:21:46.970384Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 3\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 23\n                }\n            ],\n            \"quantity\": 80,\n            \"status\": \"Completed\",\n            \"quality_rating\": 2.325527326670778,\n            \"issue_date\": \"2023-07-02T07:21:46.970384Z\",\n            \"acknowledgment_date\": \"2023-07-23T07:21:46.970384Z\",\n            \"vendor\": 818\n        },\n        {\n            \"id\": 1185,\n            \"created\": \"2024-05-04T07:21:47.554611Z\",\n            \"updated\": \"2024-05-04T07:21:47.554618Z\",\n            \"po_number\": \"PO-5488\",\n            \"order_date\": \"2024-01-10T07:21:47.554554Z\",\n            \"delivery_date\": \"2024-01-30T07:21:47.554554Z\",\n            \"items\": [\n                {\n                    \"name\": \"Item 0\",\n                    \"price\": 42\n                },\n                {\n                    \"name\": \"Item 1\",\n                    \"price\": 38\n                },\n                {\n                    \"name\": \"Item 2\",\n                    \"price\": 17\n                },\n                {\n                    \"name\": \"Item 3\",\n                    \"price\": 57\n                }\n            ],\n            \"quantity\": 83,\n            \"status\": \"Completed\",\n            \"quality_rating\": 4.571251402606018,\n            \"issue_date\": \"2024-01-03T07:21:47.554554Z\",\n            \"acknowledgment_date\": \"2024-01-30T07:21:47.554554Z\",\n            \"vendor\": 818\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "RETRIEVE-PURCHASE-ORDER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODEwMDkyLCJpYXQiOjE3MTQ4MDkxOTIsImp0aSI6IjMxOGI0MjRkM2U3YzRhZDRiYzlhODg0NjY3NmNhYWUzIiwidXNlcl9pZCI6Mn0.v3f68t8rq5WGzA92TBu7jDUPY9jJ02aKk9HEcq9LKpQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/purchase_orders/367",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"367"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "RETRIEVE-PURCHASE-ORDER",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/purchase_orders/367",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								"367"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:53:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "446"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 367,\n    \"created\": \"2024-05-04T07:21:46.970443Z\",\n    \"updated\": \"2024-05-04T07:21:46.970450Z\",\n    \"po_number\": \"PO-7368\",\n    \"order_date\": \"2023-07-04T07:21:46.970384Z\",\n    \"delivery_date\": \"2023-07-23T07:21:46.970384Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 0\",\n            \"price\": 3\n        },\n        {\n            \"name\": \"Item 1\",\n            \"price\": 23\n        }\n    ],\n    \"quantity\": 80,\n    \"status\": \"Completed\",\n    \"quality_rating\": 2.325527326670778,\n    \"issue_date\": \"2023-07-02T07:21:46.970384Z\",\n    \"acknowledgment_date\": \"2023-07-23T07:21:46.970384Z\",\n    \"vendor\": 818\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE-PURCHASE-ORDER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODEwMDkyLCJpYXQiOjE3MTQ4MDkxOTIsImp0aSI6IjMxOGI0MjRkM2U3YzRhZDRiYzlhODg0NjY3NmNhYWUzIiwidXNlcl9pZCI6Mn0.v3f68t8rq5WGzA92TBu7jDUPY9jJ02aKk9HEcq9LKpQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/purchase_orders/368/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"368",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE-PURCHASE-ORDER",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/purchase_orders/368/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								"368",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:56:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "UPDATE-PURCHASE-ORDER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODEwMDkyLCJpYXQiOjE3MTQ4MDkxOTIsImp0aSI6IjMxOGI0MjRkM2U3YzRhZDRiYzlhODg0NjY3NmNhYWUzIiwidXNlcl9pZCI6Mn0.v3f68t8rq5WGzA92TBu7jDUPY9jJ02aKk9HEcq9LKpQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"po_number\": \"PO-912345\",\n    \"vendor\": 1,\n    \"order_date\": \"2024-05-05T10:00:00Z\",\n    \"delivery_date\": \"2024-05-10T10:00:00Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 1\",\n            \"price\": 10\n        },\n        {\n            \"name\": \"Item 2\",\n            \"price\": 20\n        }\n    ],\n    \"quantity\": 50,\n    \"status\": \"Completed\",\n    \"issue_date\": \"2024-05-04T10:00:00Z\",\n    \"acknowledgment_date\": \"2024-05-11T10:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/purchase_orders/361/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"361",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE-PURCHASE-ORDER",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"po_number\": \"PO-912345\",\n    \"vendor\": 1,\n    \"order_date\": \"2024-05-05T10:00:00Z\",\n    \"delivery_date\": \"2024-05-10T10:00:00Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 1\",\n            \"price\": 10\n        },\n        {\n            \"name\": \"Item 2\",\n            \"price\": 20\n        }\n    ],\n    \"quantity\": 50,\n    \"status\": \"Completed\",\n    \"issue_date\": \"2024-05-04T10:00:00Z\",\n    \"acknowledgment_date\": \"2024-05-11T10:00:00Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/purchase_orders/361/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								"361",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 07:58:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "406"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 361,\n    \"created\": \"2024-05-04T07:21:46.963129Z\",\n    \"updated\": \"2024-05-04T07:58:59.072873Z\",\n    \"po_number\": \"PO-912345\",\n    \"order_date\": \"2024-05-05T10:00:00Z\",\n    \"delivery_date\": \"2024-05-10T10:00:00Z\",\n    \"items\": [\n        {\n            \"name\": \"Item 1\",\n            \"price\": 10\n        },\n        {\n            \"name\": \"Item 2\",\n            \"price\": 20\n        }\n    ],\n    \"quantity\": 50,\n    \"status\": \"Completed\",\n    \"quality_rating\": null,\n    \"issue_date\": \"2024-05-04T10:00:00Z\",\n    \"acknowledgment_date\": \"2024-05-11T10:00:00Z\",\n    \"vendor\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "VENDOR-PERFORMANCE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODE2MjQxLCJpYXQiOjE3MTQ4MTUzNDEsImp0aSI6ImNkZjE5MzY1YmQ0MTRiYzhhYzA4ODQ0YWE3MWZjY2NjIiwidXNlcl9pZCI6Mn0.g7x6rWt8at2dDhHSiDR3IOm8uc52pRLqib0AIXdPY3A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer your_access_token"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/110/performance/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"110",
+						"performance",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "VENDOR-PERFORMANCE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer your_access_token"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/110/performance/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								"110",
+								"performance",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 09:36:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"on_time_delivery_rate\": 0.9421962202723356,\n    \"quality_rating_avg\": 3.4343122952481613,\n    \"average_response_time\": 7.177848631442217,\n    \"fulfillment_rate\": 0.8308475777962241\n}"
+				}
+			]
+		},
+		{
+			"name": "ACKNOWLEDGE-PO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODE2NDQyLCJpYXQiOjE3MTQ4MTU1NDIsImp0aSI6ImZkOTVjYzA2ODc1NTRjZjM5NmY5MzIzOGZhYTBlM2RhIiwidXNlcl9pZCI6Mn0.HvTbAsrwGERbs067lEhDfGV1C1FFw0JVG7crpd-Bosc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer your_access_token"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/purchase_orders/810/acknowledge/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"810",
+						"acknowledge",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ACKNOWLEDGE-PO",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer your_access_token"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/purchase_orders/810/acknowledge/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchase_orders",
+								"810",
+								"acknowledge",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 09:48:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Purchase order acknowledged successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "VENDOR-PERFORMANCE-TRENDS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0ODE4NTA0LCJpYXQiOjE3MTQ4MTc2MDQsImp0aSI6IjA3MDQzMTliN2NiOTQzN2VhNmJjMDZkYmYxYzNiNDcwIiwidXNlcl9pZCI6Mn0.PVU2EckkKR_0MHbxQMHHDk25TPCGNLIt27h-7TtZoPo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vendors/21/trend/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"21",
+						"trend",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "VENDOR-PERFORMANCE-TRENDS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vendors/21/trend/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vendors",
+								"21",
+								"trend",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 04 May 2024 10:14:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "474"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"vendor_id\": 21,\n    \"day_performance\": {\n        \"on_time_delivery_rate\": 0.48228493939226824,\n        \"quality_rating_avg\": 3.3733123621387535,\n        \"average_response_time\": 9,\n        \"fulfillment_rate\": 0.15840634055974379\n    },\n    \"week_performance\": {\n        \"on_time_delivery_rate\": null,\n        \"quality_rating_avg\": null,\n        \"average_response_time\": null,\n        \"fulfillment_rate\": null\n    },\n    \"month_performance\": {\n        \"on_time_delivery_rate\": null,\n        \"quality_rating_avg\": null,\n        \"average_response_time\": null,\n        \"fulfillment_rate\": null\n    }\n}"
+				}
+			]
+		}
+	]
+}
