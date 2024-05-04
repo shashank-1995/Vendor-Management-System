@@ -37,8 +37,15 @@ metrics.
    - First clone the repository from Github and switch to the new directory:
      ```bash
       git clone https://github.com/shashank-1995/Vendor-Management-System.git
-      cd vendor_management_system
      ```
+   - Install project dependencies:
+     ```bash
+      cd Vendor-Management-System/
+     ```
+   - change branch to master:
+     ```bash
+      git checkout master
+     ```     
    - Install project dependencies:
      ```bash
       pip install -r requirements.txt
@@ -131,8 +138,8 @@ metrics.
                "quality_rating_avg": 4.5,
                "average_response_time": 2.5,
                "fulfillment_rate": 0.98
-           },  
-           
+           },
+
        ]
    }
    ```
@@ -662,74 +669,74 @@ metrics.
 
     ### a. BaseModel
 
-    - **Description:** 
+    - **Description:**
     - Implemented a base model `BaseModel` serving as the foundation for other models.
     - Includes `created` and `updated` timestamps.
     - Utilizes a custom manager `BaseModelManager` for common operations.
 
     ### b. DEFAULT_AUTHENTICATION_CLASSES
 
-    - **Description:** 
+    - **Description:**
     - Configured default authentication classes for the project's API views.
 
     ### c. Pagination of API Custom
 
-    - **Description:** 
+    - **Description:**
     - Custom pagination for API views to manage large datasets efficiently.
 
     ### d. Signals for Calculating Metrics for Real-time Updates
 
-    - **Description:** 
+    - **Description:**
     - Implemented signals to trigger calculations of metrics for real-time updates.
 
     ### e. Implementing Threading for Efficient Calculation
 
-    - **Description:** 
+    - **Description:**
     - Utilized threading for efficient calculation of resource-intensive tasks.
 
     ### f. Backend Filter
 
-    - **Description:** 
+    - **Description:**
     - Backend filters implemented for efficient data querying and filtering.
 
     ### g. Data Integrity: Division by Zero Handling
 
-    - **Description:** 
+    - **Description:**
     - Error handling for division by zero scenarios to ensure data integrity.
 
     ### h. RESTful Principles in API Design
 
-    - **Description:** 
+    - **Description:**
     - Followed RESTful principles in designing API endpoints for consistency and predictability.
 
     ### i. Django ORM for Database Interactions
 
-    - **Description:** 
+    - **Description:**
     - Leveraged Django's ORM for standardized and efficient database interactions.
 
     ### j. PEP 8 Style Guidelines Adherence
 
-    - **Description:** 
+    - **Description:**
     - Adherence to PEP 8 style guidelines for code consistency and readability.
 
     ### k. Proper Documentation
 
-    - **Description:** 
+    - **Description:**
     - Comprehensive documentation provided for clarity and ease of use.
 
     ## Test Suite
 
     ### a. `./manage.py insert_dummy_vendor_data`
 
-    - **Description:** 
+    - **Description:**
     - Command to insert dummy vendor data into the database for testing purposes.
 
     ### b. `./manage.py insert_dummy_purchase_order`
 
-    - **Description:** 
+    - **Description:**
     - Command to insert dummy purchase orders into the database for testing scenarios.
 
     ### c. Utilization of API Documentation
 
-    - **Description:** 
+    - **Description:**
     - Utilize the API documentation provided with this repository for testing API endpoints.
