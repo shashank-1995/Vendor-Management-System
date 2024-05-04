@@ -8,7 +8,7 @@ class Command(BaseCommand):
     help = 'Insert random vendors into the Vendor table'
 
     def handle(self, *args, **kwargs):
-        num_entries = 10
+        num_entries = 100
         self.insert_random_vendors(num_entries)
         self.stdout.write(self.style.SUCCESS(f'{num_entries} random entries inserted into the Vendor table.'))
 

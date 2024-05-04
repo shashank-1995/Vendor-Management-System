@@ -726,15 +726,14 @@ metrics.
 
     ## Test Suite
 
-    ### a. `./manage.py insert_dummy_vendor_data`
-
-    - **Description:**
-    - Command to insert dummy vendor data into the database for testing purposes.
-
-    ### b. `./manage.py insert_dummy_purchase_order`
-
-    - **Description:**
-    - Command to insert dummy purchase orders into the database for testing scenarios.
+    ### a. Command to insert dummy vendor data into the database for testing purposes.
+    ```bash
+    python manage.py insert_dummy_vendor_data
+    ```
+    ### b. Command to insert dummy purchase orders into the database for testing scenarios.
+    ```bash
+    python manage.py insert_dummy_purchase_order
+    ```
 
     ### c. Utilization of API Documentation
 

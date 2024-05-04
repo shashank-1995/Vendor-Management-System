@@ -15,10 +15,10 @@ class Vendor(BaseModel):
     contact_details = models.TextField()
     address = models.TextField()
     vendor_code = models.CharField(max_length=50, unique=True)
-    on_time_delivery_rate = models.FloatField()
-    quality_rating_avg = models.FloatField()
-    average_response_time = models.FloatField()
-    fulfillment_rate = models.FloatField()
+    on_time_delivery_rate = models.FloatField(null=True)
+    quality_rating_avg = models.FloatField(null=True)
+    average_response_time = models.FloatField(null=True)
+    fulfillment_rate = models.FloatField(null=True)
 
     def __str__(self):
         return self.name
@@ -56,10 +56,10 @@ class PurchaseOrder(BaseModel):
 class HistoricalPerformance(BaseModel):
     vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE, db_index=True)
     date = models.DateField()
-    on_time_delivery_rate = models.FloatField()
-    quality_rating_avg = models.FloatField()
-    average_response_time = models.FloatField()
-    fulfillment_rate = models.FloatField()
+    on_time_delivery_rate = models.FloatField(null=True)
+    quality_rating_avg = models.FloatField(null=True)
+    average_response_time = models.FloatField(null=True)
+    fulfillment_rate = models.FloatField(null=True)
 
     def __str__(self):
         return f"{self.vendor.name} - {self.date}"

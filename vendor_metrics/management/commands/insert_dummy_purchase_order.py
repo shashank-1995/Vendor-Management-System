@@ -30,10 +30,14 @@ class Command(BaseCommand):
             delivery_date = order_date + timedelta(days=random.randint(1, 30))
             items = [{'name': f'Item {i}', 'price': random.randint(1, 100)} for i in range(random.randint(1, 5))]
             quantity = random.randint(1, 100)
-            status = random.choice(['Pending', 'In Progress', 'Completed'])
-            quality_rating = random.uniform(1.0, 5.0) if status == 'Completed' else None
+            status = random.choice(['pending', 'canceled', 'completed'])
+            quality_rating = random.uniform(1.0, 5.0) if status == 'completed' else None
             issue_date = order_date - timedelta(days=random.randint(1, 10))
-            acknowledgment_date = delivery_date if status == 'Completed' else None
+            acknowledgment_date = delivery_date if status == 'completed' else None
+
+            # Ensure quality_rating is None if status is not 'Completed'
+            if status != 'completed':
+                quality_rating = None
 
             PurchaseOrder.objects.create(
                 po_number=po_number,
@@ -48,4 +52,4 @@ class Command(BaseCommand):
                 acknowledgment_date=acknowledgment_date
             )
 
-        self.stdout.write(self.style.SUCCESS('Successfully inserted 1000 random PurchaseOrder records'))
+        self.stdout.write(self.style.SUCCESS('Successfully inserted 10 random PurchaseOrder records'))
