@@ -21,39 +21,39 @@ metrics.
 
    - Create a new virtual environment:
      ```bash
-     $ python -m venv venv
+      python -m venv venv
      ```
    - Activate the virtual environment:
      - On Windows:
        ```bash
-       $ venv\Scripts\activate
+        venv\Scripts\activate
        ```
      - On macOS and Linux:
        ```bash
-       $ source venv/bin/activate
+        source venv/bin/activate
        ```
 3. **Installation:**
 
    - First clone the repository from Github and switch to the new directory:
      ```bash
-     $ git clone https://github.com/shashank-1995/Vendor-Management-System.git
-     $ cd vendor_management_system
+      git clone https://github.com/shashank-1995/Vendor-Management-System.git
+      cd vendor_management_system
      ```
    - Install project dependencies:
      ```bash
-     $ pip install -r requirements.txt
+      pip install -r requirements.txt
      ```
    - Then simply apply the migrations:
      ```bash
-     $ python manage.py migrate
+      python manage.py migrate
      ```
    - Create a superuser for API access
      ```bash
-     $ python manage.py createsuperuser
+      python manage.py createsuperuser
      ```
    - You can now run the development server:
      ```bash
-     $ python manage.py runserver
+      python manage.py runserver
      ```
 4. **API Documentaion:**
 
